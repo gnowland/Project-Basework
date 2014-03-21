@@ -1,0 +1,56 @@
+/* - - - local partials - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * _media.scss
+ */
+
+// .media styles adapted from RESPONSIVEBP
+// http://responsivebp.com/css/media.html
+
+// [R]
+// Properly scale your video on any device based on YouTube/Dailymotion ratio.
+.media {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  height: 0;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+// Widescreen mode:
+.media.widescreen {
+  padding-bottom: 45%;
+}
+
+// The actual player.
+.media iframe,
+.media object,
+.media embed,
+.media video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
+
+// [R]
+// Constrained Images!
+// Position the image absolutely and then move it's four positions 1000000% out of the
+// container. This, in combination with the auto margin, is the core of the trick.
+// Why the large number? Firefox seems to have issue when using larger images even at 100%.
+.media img {
+    position: absolute;
+    top: -1000000%;
+    right: -1000000%;
+    bottom: -1000000%;
+    left: -1000000%;
+    margin: auto;
+    width: 100%;
+}

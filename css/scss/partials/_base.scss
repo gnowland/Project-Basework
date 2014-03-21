@@ -1,0 +1,21 @@
+// This partial file is to combine together all stylesheets with common variables and framework utilities
+
+/* ---------------------------------------------------------------------------------------------------
+ * BEGIN COMPASS PLUGIN IMPORT */
+
+@import
+  "compass/css3",
+  "normalize";
+
+/*
+ * END COMPASS PLUGIN IMPORT
+ * ---------------------------------------------------------------------------------------------------
+ * BEGIN LOCAL PARTIALS IMPORT */
+
+@import
+  "defaults",
+  "media";
+
+/* ---------------------------------------------------------------------------------------------------
+ * END LOCAL PARTIALS IMPORT
+ */
